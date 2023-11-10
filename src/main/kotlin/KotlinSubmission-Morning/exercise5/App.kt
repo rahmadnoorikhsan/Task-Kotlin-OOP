@@ -1,4 +1,4 @@
-package id.infinitelearning.KotlinSubmission.exercise5
+package `KotlinSubmission-Morning`.exercise5
 
 fun main() {
 
@@ -7,7 +7,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,7 +15,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
+    hero.setProfile("Rahmad Noor Ikhsan", 21, 175)
 
 
     /**
@@ -23,8 +23,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
-
+    hero.profile()
 
     /**
     Challenge:
@@ -65,7 +64,22 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.run()
+    hero.run()
+    hero.eat()
+    hero.eat()
+    hero.eat()
+    hero.eat()
+    hero.drink()
+    hero.jump()
+    hero.jump()
+    hero.jump()
+    hero.jump()
+    hero.jump()
+    hero.sit()
 
 
     /**
@@ -73,7 +87,5 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
-
-
+    hero.profile()
 }

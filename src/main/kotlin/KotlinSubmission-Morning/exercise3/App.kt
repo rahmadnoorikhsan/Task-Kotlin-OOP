@@ -1,4 +1,4 @@
-package id.infinitelearning.KotlinSubmission.exercise3
+package `KotlinSubmission-Morning`.exercise3
 
 fun main() {
 
@@ -17,4 +17,13 @@ fun main() {
      */
     // Buat di bawah sini
 
+    val score = 90
+    val result =
+        if (score >= 90) "Selamat! Anda mendapatkan nilai A."
+        else if (score >= 80) "Anda mendapatkan nilai B."
+        else if (score >= 70) "Anda mendapatkan nilai C."
+        else if (score >= 60) "Anda mendapatkan nilai D."
+        else "Anda mendapatkan nilai E."
+
+    println(result)
 }

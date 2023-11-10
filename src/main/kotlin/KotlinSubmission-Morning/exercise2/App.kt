@@ -1,4 +1,4 @@
-package id.infinitelearning.KotlinSubmission.exercise2
+package `KotlinSubmission-Morning`.exercise2
 
 fun main() {
 
@@ -9,6 +9,12 @@ fun main() {
     - Agar lebih mudah, gunakanlah for loop dan logika if untuk mengisi bilangan genap pada list
      */
     // Buat di bawah sini
+    val number = 1..100
+    for (i in number) {
+        if (i % 2 == 0) {
+            println(i)
+        }
+    }
 
 
     /** Latihan 2 Map
@@ -18,18 +24,40 @@ fun main() {
     - key "Jan", value January
     - key "Feb", value February
     - dst...
+    */
     // Buat di bawah sini
+    val month = mapOf(
+        "Jan" to "Januari",
+        "Feb" to "Februari",
+        "Mar" to "Maret",
+        "Apr" to "April",
+        "Mei" to "Mei",
+        "Jun" to "Juni",
+        "Jul" to "Juli",
+        "Aug" to "Agustus",
+        "Sep" to "September",
+        "Oct" to "Oktober",
+        "Nov" to "November",
+        "Des" to "Desember"
+    )
 
-    Cetak semua nama bulan dengan fungsi forEach sehingga hasil output seperti:
+
+    /**Cetak semua nama bulan dengan fungsi forEach sehingga hasil output seperti:
     - Jan -> January
     - Feb -> February
     - Dst...
+    */
     // Buat di bawah sini
+    month.forEach { (key, value) ->
+        println("$key -> $value")
+    }
 
-    Cetak nama bulan sekarang dan bulan lahir kamu dengan format string berikut:
+    /**Cetak nama bulan sekarang dan bulan lahir kamu dengan format string berikut:
     - "It's {$monthNow} now, I was born in {$birthMonth}"
-     */
+    */
     // Buat di bawah sini
+    val monthNow = month["Nov"]
+    val birthMonth = month["Sep"]
 
-
+    println("It's $monthNow Now, I was born in $birthMonth")
 }

@@ -1,4 +1,4 @@
-package id.infinitelearning.KotlinSubmission.exercise1
+package `KotlinSubmission-Morning`.exercise1
 
 /**
 Latihan 1
@@ -10,7 +10,14 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val firstName = "Rahmad Noor "
+    val lastName = "Ikhsan"
+    val age = 21
+    val single = true
 
+    println("Name : ${firstName + lastName}")
+    println("Age : $age years")
+    if (single) println("Status : Single") else println("Status : Married")
 }
 
 
@@ -19,7 +26,7 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
-    return ""
+    return println("Name : $groupId\nMember : $groupMember\nSession : $session")
 }
 
 /**
@@ -29,8 +36,20 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val members = listOf(
+        "Fadhila Risfania",
+        "Aina Fazla",
+        "Adityo Khori Ramadhan",
+        "Rizka Hilmi Putri",
+        "Alfin Syatriawan",
+        "Rahmad Noor Ikhsan",
+        "Kayla Vyanca Atalaya",
+        "Mutiara Sabrina Jauhari",
+        "Dito Iqbal",
+        "Alfin Setiawan",
+        "Austin",
+    )
+    return members.filter { it == "Rahmad Noor Ikhsan" }
 }
 
 /**
@@ -41,10 +60,22 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf("Jovian", "Imam")
+    val countOfGroup = arrayOf(
+        "Fadhila Risfania",
+        "Aina Fazla",
+        "Adityo Khori Ramadhan",
+        "Rizka Hilmi Putri",
+        "Alfin Syatriawan",
+        "Kayla Vyanca Atalaya",
+        "Mutiara Sabrina Jauhari",
+        "Dito Iqbal",
+        "Alfin Setiawan",
+        "Austin",
+        "Rahmad Noor Ikhsan"
+    )
 
-    return 0
+    return mentor.size + countOfGroup.size
 }
 
 fun main() {
@@ -62,6 +93,21 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
-
+    groupDetail(
+        groupId = "Eternal Light",
+        groupMember = listOf(
+            "Fadhila Risfania",
+            "Aina Fazla",
+            "Adityo Khori Ramadhan",
+            "Rizka Hilmi Putri",
+            "Alfin Syatriawan",
+            "Kayla Vyanca Atalaya",
+            "Mutiara Sabrina Jauhari",
+            "Dito Iqbal",
+            "Alfin Setiawan",
+            "Austin",
+            "Rahmad Noor Ikhsan"
+        ),
+        session = "Morning"
+    )
 }
